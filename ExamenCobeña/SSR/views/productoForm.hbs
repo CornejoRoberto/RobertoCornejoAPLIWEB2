@@ -1,0 +1,26 @@
+<div class="container">
+    <br>
+
+    <form action="/productoForm/producto/operar" method="POST">
+        <input type="hidden" name="_id" value={{producto._id}}>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" value="{{producto.deletreo}}">
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control" id="precio" name="precio" value={{producto.silabas}}>
+        </div>
+        <div class="form-group">
+            <label for="costo">Costo</label>
+            <input type="text" class="form-control" id="costo" name="costo" value={{producto.fonetica}}>
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary" >Aceptar</button>
+        <a href="/" class="btn btn-danger" >Cancelar</a>
+        
+
+    </form>
+
+</div>
